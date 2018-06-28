@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<a href="/">홈으로</a><!--일반적인 방법-->
+<%=link_to('new', new_post_path)%> <!--레일즈 스러운 방법-->
+<%= yield %>
+
+</body>
+</html>
